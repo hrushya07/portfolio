@@ -1,4 +1,4 @@
-import WorkingInProgress from '@/component/WorkInProgress';
+import WorkingInProgress from './component/WorkInProgress';
 
 function App() {
   return (

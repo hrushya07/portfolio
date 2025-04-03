@@ -1,14 +1,18 @@
 'use client'
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 
-export default function Preloader() {
+export default function Preloader({ onLoadingComplete }: { onLoadingComplete: () => void }) {
     const loadingScreenRef = useRef(null);
     const loaderRef = useRef(null);
 
     useGSAP(() => {
-        const tl = gsap.timeline();
+        const tl = gsap.timeline({
+            onComplete: () => {
+                onLoadingComplete();
+            }
+        });
 
         tl.from(".loader", {
           height: 0,
@@ -40,7 +44,7 @@ export default function Preloader() {
             opacity: 0,
             duration: 0.5,
             ease: "power1.inOut"
-        });   
+        });
     }, { scope: loadingScreenRef });
 
     return (

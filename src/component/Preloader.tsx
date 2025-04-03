@@ -46,9 +46,9 @@ export default function Preloader({ onLoadingComplete }: { onLoadingComplete: ()
     }, { scope: loadingScreenRef });
 
     return (
-        <div ref={loadingScreenRef} className=" loading-screen fixed bg-black flex  items-center justify-center top-0 left-0 w-full h-full text-white pointer-events-none z-[1000]">
-            <div ref={loaderRef} className="loader absolute w-[30vw] min-w-[280px] max-w-[400px] h-[2vw] bg-gray-700">
-                <div className="loader-1 relative bg-white w-full h-full"></div>
+        <div ref={loadingScreenRef} className=" loading-screen fixed bg-gray-200 flex  items-center justify-center top-0 left-0 w-full h-full text-white pointer-events-none z-[1000]">
+            <div ref={loaderRef} className="loader absolute w-[30vw] min-w-[280px] max-w-[400px] h-[2vw] bg-gray-300">
+                <div className="loader-1 relative bg-black w-full h-full"></div>
             </div>
         </div>
     );

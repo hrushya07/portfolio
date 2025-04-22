@@ -1,6 +1,4 @@
 'use client';
-import Hero from "@/component/Hero";
-import Preloader from "@/component/Preloader";
 import { useState, useEffect } from "react";
 
 export default function Home() {
@@ -17,11 +15,7 @@ export default function Home() {
 
     return (
         <main className="min-h-screen bg-gray-200">
-            {/* {isLoading && <Preloader onLoadingComplete={() => setIsLoading(false)} />}
-            {isContentReady && (
-                <Hero />
-            )} */}
-            <Hero />
+           
         </main>
     );
 }

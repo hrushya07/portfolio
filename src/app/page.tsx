@@ -9,11 +9,11 @@ export default function Home() {
 
 	const initialTimeline = createTimeline();
 
-	var bioText = 'IT Consultant & Polyglot Developer Bridging business needs with tech solutions JavaScript & Go enthusiast'
+	const bioText = 'IT Consultant & Polyglot Developer Bridging business needs with tech solutions JavaScript & Go enthusiast'
 
 	useEffect(() => {
 		createScope({ root })
-			.add(self => {
+			.add(() => {
 
 				initialTimeline
 					.add('.bar', {

@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from "react";
-import { createTimeline, animate, createScope, eases } from 'animejs';
+import { createTimeline, createScope, eases } from 'animejs';
 
 
 export default function Home() {

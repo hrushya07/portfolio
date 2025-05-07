@@ -103,7 +103,7 @@ body {
 
 
 @font-face {
-	font-family: '';
+	font-family: 'Gambetta';
 	src: url('/public/Gambetta.ttf');
 }
 
@@ -116,7 +116,7 @@ body {
 }
 
 .landing-page {
-	height: 100vh;
+	height: 100svh;
 	width: 100%;
 	display: flex;
 	flex-direction: column;

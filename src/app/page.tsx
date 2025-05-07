@@ -126,11 +126,11 @@ export default function Home() {
 				<div className="landing-page relative">
 					<div className="content overflow-hidden">
 						<div className="slide opacity-0 p-2 z-1"></div>
-						<div className="hrushikesh-text opacity-0 text-white general-sans name-gradient">Hrushikesh</div>
+						<div className="hrushikesh-text opacity-0 text-white general-sans name-gradient general-sans">Hrushikesh</div>
 					</div>
 
 					<div className="bio-container">
-						<p className="text-white bio-text">
+						<p className="text-white bio-text gambetta">
 							{bioText.split('').map((char, index) => (
 								<span className="letter opacity-0 inline-block" key={index}>
 									{char === ' ' ? '\u00A0' : char}
